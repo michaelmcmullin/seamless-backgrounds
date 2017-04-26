@@ -1,0 +1,135 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body {
+	color: #f8db9a;
+	background-color: #37324a;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	padding: 1em;
+}
+
+h1 {
+	font-weight: normal;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 2em;
+	padding: 0.5em;
+	border-bottom: 1px solid #329996;
+}
+
+#canvas {
+	background: #fff url('images/transbg.gif') repeat;
+	float: left;
+	cursor: crosshair;
+	-moz-box-shadow: 3px 3px 10px 0px #000;
+	-webkit-box-shadow: 3px 3px 10px 0px #000;
+	box-shadow: 3px 3px 10px 0px #000;
+}
+
+
+#preview {
+	float: left;
+	margin-left: 3em;
+	background: #fff url('images/transbg.gif') repeat;
+	-moz-box-shadow: 3px 3px 10px 0px #000;
+	-webkit-box-shadow: 3px 3px 10px 0px #000;
+	box-shadow: 3px 3px 10px 0px #000;
+}
+
+#savefile {
+	position: absolute;
+	left: 0; right: 0;
+	margin: 10em auto 0 auto;
+	width: 300px;
+	z-index: 100;
+	background: #f8db9a;
+	border-radius: 1em;
+	padding: 1em;
+	-moz-box-shadow: 3px 3px 10px 0px #000;
+	-webkit-box-shadow: 3px 3px 10px 0px #000;
+	box-shadow: 3px 3px 10px 0px #000;
+}
+
+#savefile h3 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 150%;
+	color: #933c60;
+	margin-bottom: 0.5em;
+}
+#savefile p {
+	font-size: 80%;
+	color: #000;
+	margin-bottom: 1em;
+}
+#closeSaveFile {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	text-decoration: none;
+	right: -10px;
+	top: -10px;
+}
+
+#saveimg {
+}
+
+#saveimg img {
+	display:block;
+	margin: auto;
+	border-radius: 1em;
+	border: 3px dotted #f3a358;
+	background: #fff url('images/transbg.gif') repeat;
+}
+
+#tools {
+	position: relative;
+	background-color: #329996;
+	height: 30px;
+	margin-bottom: 1em;
+	padding: 0.5em;
+}
+
+.toolgroup {
+	position: relative;
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding-right: 1em;
+	border-right: 3px dotted #bee3e2;
+}
+
+.button {
+	position: relative;
+	display: table;
+	float: left;
+	height: 30px;
+	background: #000;
+	margin: 0 0.25em 0 0;
+	color: #f8db9a;
+	cursor: pointer;
+}
+.button span {
+	display: table-cell;
+	vertical-align: middle;
+	position: static;
+	padding: 0 1em;
+	text-transform: uppercase;
+	font-size: 80%;
+}
+
+
+.palette {
+	display: inline-block;
+	margin-right: 0.25em;
+	width: 90px;
+	height: 30px;
+	outline: #bee3e2 1px solid;
+}
+
+.color {
+	display: inline-block;
+	margin-right: 0.25em;
+	width: 30px;
+	height: 30px;
+	outline: #bee3e2 1px solid;
+	cursor: crosshair;
+}
