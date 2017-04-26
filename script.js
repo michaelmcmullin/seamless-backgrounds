@@ -114,7 +114,7 @@ canvas.onmousedown = function(e) {
 	var winCanvasX = Position(canvas).left;
 	var winCanvasY = Position(canvas).top;
 
-	context.lineWidth = 50;
+	context.lineWidth = 3;
 	context.beginPath();
 	
 	curX = e.pageX - winCanvasX;
@@ -171,7 +171,7 @@ window.onmousemove = function(e) {
 			context.moveTo(newX1, newY1);
 			context.lineTo(newX2, newY2);
 		}
-		context.lineWidth = 50;
+		context.lineWidth = 3;
 		context.stroke();
 		context.moveTo(nextX, nextY);	// Replace position
 		
