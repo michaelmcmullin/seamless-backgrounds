@@ -38,7 +38,6 @@ var saveImg = document.getElementById('saveimg');
 saveDiv.style.display = 'none';
 
 saveButton.onclick = function () {
-  // Canvas2Image.saveAsPNG(canvas);
   var oImgPNG = Canvas2Image.saveAsPNG(app.canvas, true);
   saveDiv.style.display = 'block';
 
